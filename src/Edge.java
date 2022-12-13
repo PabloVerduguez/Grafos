@@ -1,21 +1,21 @@
 public class Edge {
-    private String personaje1;
-    private String personaje2;
+    private Node personaje1;
+    private Node personaje2;
     private int numInteracciones;
 
-    public String getPersonaje1() {
+    public Node getPersonaje1() {
         return this.personaje1;
     }
 
-    public void setPersonaje1(String personaje1) {
+    public void setPersonaje1(Node personaje1) {
         this.personaje1 = personaje1;
     }
 
-    public String getPersonaje2() {
+    public Node getPersonaje2() {
         return this.personaje2;
     }
 
-    public void setPersonaje2(String personaje2) {
+    public void setPersonaje2(Node personaje2) {
         this.personaje2 = personaje2;
     }
 
@@ -27,9 +27,15 @@ public class Edge {
         this.numInteracciones = numInteracciones;
     }
 
-    Edge(String personaje1, String personaje2, int numInteracciones) {
+    Edge(Node personaje1, Node personaje2, int numInteracciones) {
         this.personaje1 = personaje1;
         this.personaje2 = personaje2;
         this.numInteracciones = numInteracciones;
+    }
+
+    @Override
+    public String toString() {
+        return "\n Edge [Personaje1=" + personaje1.getPersonaje() + ", personaje2=" + personaje2.getPersonaje() + ", interacciones="
+                + numInteracciones + "]";
     }
 }
