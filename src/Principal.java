@@ -11,6 +11,10 @@ public class Principal {
         System.out.println(graph);
     }
 
+    /**
+     * @return
+     * @throws IOException
+     */
     private static Graph leerFichero2() throws IOException {
         String fuente, objetivo;
 		Graph graph = new Graph();
